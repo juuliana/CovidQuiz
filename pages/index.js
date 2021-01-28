@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import Head from 'next/head';
+
 import db from '../db.json';
 import Widget from '../src/components/Widget';
 import Footer from '../src/components/Footer';
@@ -19,6 +21,9 @@ const QuizContainer = styled.div`
 export default function Home() {
   return(
     <QuizBackground backgroundImage={db.bg}>
+      <Head>
+        <title>PotterQuiz - Quiz do Harry Potter</title>
+      </Head>
       <QuizContainer>
         <Widget>
           <Widget.Header>
