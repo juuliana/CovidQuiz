@@ -1,42 +1,55 @@
-import styled from 'styled-components'
+import React from 'react';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 
 import db from '../db.json';
 import Widget from '../src/components/Widget';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
 import QuizBackground from '../src/components/QuizBackground';
-
-const QuizContainer = styled.div`
-  width: 100%;
-  max-width: 350px;
-  padding-top: 45px;
-  margin: auto 10%;
-  @media screen and (max-width: 500px) {
-    margin: auto;
-    padding: 15px;
-  }
-`;
+import Input from '../src/components/Input';
+import Button from '../src/components/Button';
+import QuizContainer from '../src/components/QuizContainer';
+import QuizLogo from '../src/components/QuizLogo';
 
 export default function Home() {
+  const router = useRouter();
+  const [name, setName] = React.useState('');
+  
   return(
     <QuizBackground backgroundImage={db.bg}>
       <Head>
-        <title>PotterQuiz - Quiz do Harry Potter</title>
+        <title>QuizCovid</title>
       </Head>
       <QuizContainer>
+        <QuizLogo/>
         <Widget>
           <Widget.Header>
-            <h1>Harry Potter</h1>
+            <h1># Quiz da pandemia sobre o Covid-19</h1>
           </Widget.Header>
           <Widget.Content>
-            <p>Alohomora</p>
+            <form onSubmit={function(infosDoEvento){
+              infosDoEvento.preventDefault();
+                       
+              router.push(`/quiz?name=${name}`);
+
+            }}>
+              <Input
+                name="nomeDoJogador"
+                onChange={(infosDoEvento) => setName(infosDoEvento.target.value)}
+                placeholder="Insira o seu nome"
+                value={name}
+              />
+              <Button type="submit" disabled={name.length === 0}>
+                {`Teste seu conhecimento ${name}`}
+              </Button>
+            </form>
           </Widget.Content>
         </Widget>
 
         <Widget>
           <Widget.Header>
-            <h1>Quiz da galera</h1>
+            <h1>Quizzes da ImersãoReactNext - Alura</h1>
           </Widget.Header>
           <Widget.Content>
             <p>Alohomora</p>
