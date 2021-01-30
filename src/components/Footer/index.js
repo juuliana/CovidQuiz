@@ -1,14 +1,13 @@
 import styled from 'styled-components';
 
-// src/components/Footer/index.js
 const FooterWrapper = styled.footer`
   background-color: #00000070;
   padding: 20px;
   display: flex;
   align-items: center;
-  border-radius: 4px; 
+  border-radius: 4px;
   img {
-    width: 58px;
+    width: 130px;
     margin-right: 23px;
   }
   a {
@@ -32,15 +31,9 @@ export default function Footer(props) {
       <a href="https://www.alura.com.br/">
         <img src="https://www.alura.com.br/assets/img/alura-logo-white.1570550707.svg" alt="Logo Alura" />
       </a>
-      <p>
-        Orgulhosamente criado durante
-        {' '}
-        a
-        {' '}
-        <a href="https://www.alura.com.br/">
-          <span>Imersão React da Alura</span>
-        </a>
-      </p>
+      <a href="https://coronavirus.saude.gov.br/">
+        <img src="https://portalarquivos.saude.gov.br/images/png/2020/April/14/logo.png" alt="Logo Ministerio" />
+      </a>
     </FooterWrapper>
   );
 }
