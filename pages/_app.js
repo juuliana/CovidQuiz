@@ -10,11 +10,9 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    /* New styles */
     display: flex;
     flex-direction: column;
     font-family: 'Lato', sans-serif;
-    // Deixa branco no começo
     color: ${({ theme }) => theme.colors.contrastText};
   }
   html, body {
@@ -39,7 +37,6 @@ export default function App({ Component, pageProps }) {
       </Head>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
-        {/* eslint-disable-next-line react/jsx-props-no-spreading */}
         <Component {...pageProps} />
       </ThemeProvider>
     </>
