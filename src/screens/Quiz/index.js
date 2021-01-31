@@ -10,13 +10,14 @@ import BackLinkArrow from '../../components/BackLinkArrow';
 
 function ResultWidget({ results }) {
   return (
-    <Widget>
+    <Widget
+      as={motion.section}
+      animate={{ rotate: 360 }}
+      transition={{ duration: 3 }}
+    >
       <Widget.Header>
-        Tela de Resultado:
-      </Widget.Header>
-
-      <Widget.Content>
-        <p>
+        <BackLinkArrow href="/"/>
+        <h1>
           Você acertou 
           {' '}
           { results.reduce((somatoriaAtual, resultAtual) => {
@@ -28,7 +29,10 @@ function ResultWidget({ results }) {
               return somatoriaAtual;
           }, 0)}
           perguntas
-        </p>
+        </h1>
+      </Widget.Header>
+
+      <Widget.Content>
         <ul>
           {results.map((result, index) => (
             <li key={`result__${result}`}>
@@ -57,13 +61,9 @@ function ResultWidget({ results }) {
 function LoadingWidget() {
   return (
     <Widget>
-      <Widget.Header>
-        Carregando...
-      </Widget.Header>
-
-      <Widget.Content>
+      <Widget.Loading>
         <Loading/>
-      </Widget.Content>
+      </Widget.Loading>
     </Widget>
   );
 }
