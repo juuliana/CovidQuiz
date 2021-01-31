@@ -26,7 +26,7 @@ export default function Home() {
         <QuizLogo/>
         <Widget>
           <Widget.Header>
-            <h1># Quiz da pandemia sobre o Covid-19</h1>
+            <h1 align="center"># Quiz da pandemia sobre o Covid-19: conheça mais sobre esse novo vírus e se cuide!</h1>
           </Widget.Header>
           <Widget.Content>
             <form onSubmit={function(infosDoEvento){
