@@ -9,7 +9,7 @@ const FooterWrapper = styled.footer`
 
   img {
     width: 200px;
-    margin-left: 100px;
+    margin-left: 50%;
   }
 
   a {
@@ -28,7 +28,6 @@ const FooterWrapper = styled.footer`
 
 export default function Footer(props) {
   return (
-    // eslint-disable-next-line react/jsx-props-no-spreading
     <FooterWrapper {...props}>
       <a href="https://coronavirus.saude.gov.br/" target="_blank">
         <img src="https://portalarquivos.saude.gov.br/images/png/2020/April/14/logo.png" alt="Logo Ministerio" />
