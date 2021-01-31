@@ -46,13 +46,6 @@ function ResultWidget({ results }) {
             </li>
           ))}
         </ul>
-        <p>
-            Nesse período, é de extrema importância estarmos cientes sobre os métodos necessários para a prevenção da Covid-19.
-            E além de todos esses procedimentos, conhecer quais os principais sintomas e saber quando precisamos procurar o serviço de saúde.
-        </p>
-        <p>
-            E
-        </p>
       </Widget.Content>
     </Widget>
   );
@@ -153,8 +146,15 @@ function QuestionWidget({
                     <Button type="submit" disabled={!hasAlternativeSelected}>
                         Confirmar
                     </Button>
-                    {isQuestionSubmit && isCorrect && <p>Você acertou! {question.description}</p>}
-                    {isQuestionSubmit && !isCorrect && <p>Você errou! {question.description}</p>}
+
+                    {isQuestionSubmit && isCorrect &&
+                      <Widget.Topic><h1>Você acertou!</h1> {question.description}</Widget.Topic>
+                    }
+
+                    {isQuestionSubmit && !isCorrect &&
+                      <Widget.Topic><h1>Você errou!</h1> {question.description}</Widget.Topic>
+                    }
+                    
                 </AlternativesForm>
             </Widget.Content>
         </Widget>
