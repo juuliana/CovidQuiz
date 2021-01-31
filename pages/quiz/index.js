@@ -1,5 +1,6 @@
 import React from 'react';
 import db from '../../db.json';
+import { motion } from 'framer-motion';
 import Widget from '../../src/components/Widget';
 import QuizBackground from '../../src/components/QuizBackground';
 import QuizContainer from '../../src/components/QuizContainer';
@@ -10,14 +11,15 @@ import BackLinkArrow from '../../src/components/BackLinkArrow';
 
 function ResultWidget({ results }) {
   return (
-    <Widget>
+    <Widget 
+      as={motion.section}
+      animate={{ rotate: 360 }}
+      transition={{ duration: 3 }}
+    >
       <Widget.Header>
         <BackLinkArrow href="/"/>
-        Tela de Resultado:
-      </Widget.Header>
 
-      <Widget.Content>
-        <h1 align="center">
+        <h1>
           Você acertou 
           {' '}
           { results.reduce((somatoriaAtual, resultAtual) => {
@@ -31,6 +33,9 @@ function ResultWidget({ results }) {
           {' '}
           perguntas!
         </h1>
+      </Widget.Header>
+
+      <Widget.Content>
         <ul align="center">
           {results.map((result, index) => (
             <li key={`result__${result}`}>
@@ -63,10 +68,6 @@ function ResultWidget({ results }) {
 function LoadingWidget() {
   return (
     <Widget>
-      <Widget.Header>
-        Você sabia que...
-      </Widget.Header>
-
       <Widget.Loading>
         <Loading/>
       </Widget.Loading>
