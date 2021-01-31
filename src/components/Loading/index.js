@@ -1,18 +1,23 @@
-import styled from 'styled-components';
+import Lottie from 'react-lottie';
 
-const Loading = styled.div`
+import animationData from '../../animation/loading.json';
 
-    border: 8px solid #000000;
-    border-left-color: #00000010;
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
+export default function Loading() {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData,
+  };
 
-    animation: spin 1s linear infinite;
-
-    @keyframes spin {
-        to{ transform: rotate(360deg);}
-    }
-`;
-
-export default Loading;
+  return (
+    <>
+        <Lottie
+            options={defaultOptions}
+            height={300}
+            width={300}
+            isStopped={false}
+            isPaused={false}
+        />
+    </>
+  );
+}
