@@ -26,7 +26,7 @@
     {
       "image": "https://images.impresa.pt/sicnot/2020-03-17-ezgif.com-video-to-gif.gif",
       "title": "A afirmação: se eu não apresentei os sintomas, não tive o COVID-19. É:",
-      "description": "Existem sim pessoas que tiveram o Covid-19 porém não apresentaram nenhum dos sintomas",
+      "description": "Existem sim pessoas que tiveram o Covid-19 porém não apresentaram nenhum dos sintomas.",
       "answer": 1,
       "alternatives": [
         "Verdadeiro",
@@ -36,11 +36,43 @@
     {
       "image": "https://media.giphy.com/media/XR2huD4XC8h20/giphy.gif",
       "title": "Posso obter o Covid-19 através de comidas?",
-      "description": "Até o momento, não existe essa comprovação. Mas por segurança continue lavando bem as mãos antes de prepará-los",
+      "description": "Até o momento, não existe essa comprovação. Mas por segurança continue lavando bem as mãos antes de prepará-los.",
       "answer": 1,
       "alternatives": [
         "Claro que posso",
         "Acredito que não"
+      ]
+    },
+    {
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/gif?q=85&c=sc&poi=%5B837%2C500%5D&w=1745&h=914&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F12%2F2020%2F03%2Fcoronavirus-weather.gif",
+      "title": "O surto foi declarado pandemia em 11 de março de 2020 pela Organização Mundial da Saúde. Essa afirmação é:",
+      "description": "Em 11 de março de 2020, a OMS declarou o surto uma pandemia, considerada uma doença que é transmitida facilmente entre as pessoas de vários países.",
+      "answer": 0,
+      "alternatives": [
+        "Verdadeira",
+        "Falsa"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/ZRnRlfVgyKmKk/giphy.gif",
+      "title": "O primeiro caso da pandemia de Covid-19 foi reportado em:",
+      "description": "A doença foi identificada em Wuhan, na província de Hubei, República Popular da China em 1 de dezembro de 2019, porém, o primeiro caso foi reportado em 31 de dezembro de 2019.",
+      "answer": 1,
+      "alternatives": [
+        "1 de dezembro de 2019",
+        "31 de dezembro de 2019"
+      ]
+    },
+    {
+      "image": "https://www.gsb.stanford.edu/sites/gsb/files/resources/covid-key-motion.gif",
+      "title": "Selecione a medida de prevenção incorreta:",
+      "description": "A recomendação é que todos evitem locais com aglomerações.",
+      "answer": 1,
+      "alternatives": [
+        "Lavar as mãos regularmente com água e sabão, além de usar álcool em gel",
+        "Evite aglomerações somente se não se sentir bem",
+        "Mantenha pelo menos 1 metro de distância entre qualquer pessoa que esteja tossindo ou espirrando",
+        "Evite tocar os olhos, boca e nariz"
       ]
     }
   ],
