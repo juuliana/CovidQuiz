@@ -82,7 +82,16 @@ function QuestionWidget({
     const hasAlternativeSelected = selectedAlternative !== undefined ;
 
     return (
-        <Widget>
+        <Widget
+          as={motion.section}
+          transition={{ delay: 0, duration: 1}}
+          variants={{
+            show:{ opacity: 1, y: '0'},
+            hidden: { opacity: 0, y: '100%'},
+          }}
+          initial="hidden"
+          animate="show"
+        >
             <Widget.Header>
                 <BackLinkArrow href="/"/>
                 <h3>
