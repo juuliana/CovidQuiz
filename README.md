@@ -1,8 +1,8 @@
-<p align='center'><img width='200' src="./src/assets/img/karaokêflix.png"/></p>
+<p align='center'><img width='200' src="https://github.com/juuliana/CovidQuiz/blob/main/src/assets/CovidQuizLogo.png"></p>
 
 <h1 align='center'>CovidQuiz - Imersão React Next</h1>
 
-![CovidQuiz](https://github.com/juuliana/KaraokeFlix/blob/master/src/assets/img/telaP.png)
+![CovidQuiz](https://github.com/juuliana/CovidQuiz/blob/main/src/assets/CovidQuizImage.png)
 
 <h3 align="center">Descrição:</h3>
 <p align="center">
