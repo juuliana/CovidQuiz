@@ -17,7 +17,7 @@ function ResultWidget({ results }) {
       </Widget.Header>
 
       <Widget.Content>
-        <p>
+        <h1 align="center">
           Você acertou 
           {' '}
           { results.reduce((somatoriaAtual, resultAtual) => {
@@ -30,8 +30,8 @@ function ResultWidget({ results }) {
           }, 0)}
           {' '}
           perguntas!
-        </p>
-        <ul>
+        </h1>
+        <ul align="center">
           {results.map((result, index) => (
             <li key={`result__${result}`}>
               #
@@ -45,12 +45,15 @@ function ResultWidget({ results }) {
           ))}
         </ul>
         <Widget.Header>
-          Nesse período, é de extrema importância estarmos cientes sobre os métodos necessários para a prevenção da Covid-19.
-          <br/>
-          E além de todos esses procedimentos, conhecer quais os principais sintomas e saber quando precisamos procurar o serviço de saúde.
+          <h2>Nesse período, é de extrema importância estarmos cientes sobre os métodos necessários para a prevenção da Covid-19.</h2>
         </Widget.Header>
+        
         <Widget.Header>
-          Ajude a salvar vidas!
+          <h1>E além de todos esses procedimentos, conhecer quais os principais sintomas e saber quando precisamos procurar o serviço de saúde.</h1>
+        </Widget.Header>
+
+        <Widget.Header>
+          <h3>Ajude a salvar vidas!</h3>
         </Widget.Header>
       </Widget.Content>
     </Widget>
@@ -116,7 +119,7 @@ function QuestionWidget({
                         onSubmit();
                         setIsQuestionSubmit(false);
                         setSelectedAlternative(undefined);
-                    }, 9 * 1000);
+                    }, 1 * 1000);
                 }}
                 >
                     {question.alternatives.map((alternative, alternativeIndex) => {
