@@ -46,6 +46,13 @@ Widget.Content = styled.div`
   }
 `;
 
+Widget.Loading = styled.div`
+  display: flex;
+  padding: 18px 180px;
+  justify-content: flex-start;
+  align-items: center;
+`;
+
 Widget.Topic = styled.a`
   outline: 0;
   text-decoration: none;
