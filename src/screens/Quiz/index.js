@@ -1,5 +1,5 @@
 import React from 'react';
-//import db from '../../../db.json';
+import { motion } from 'framer-motion';
 import Widget from '../../components/Widget';
 import QuizBackground from '../../components/QuizBackground';
 import QuizContainer from '../../components/QuizContainer';
