@@ -1,6 +1,6 @@
 {
-  "bg": "https://jornalboavista.com.br/site/wp-content/uploads/2020/11/istock-1208953647-1.jpg",
-  "title": "# Quiz da pandemia sobre o Covid-19",
+  "bg": "https://www.lacoop.coop/sites/default/files/2020-03/COVID-19_0.jpg",
+  "title": "# Quiz da pandemia sobre o Covid-19: conheça mais sobre esse novo vírus e se cuide!",
   "description": "Teste os seus conhecimentos sobre o Covid-19 e se proteja!",
   "questions": [
     {
@@ -24,18 +24,31 @@
       ]
     },
     {
-      "image": "https://descora.com/wp-content/uploads/2020/04/818_covid_mask_db-1.gif",
-      "title": "",
-      "description": "",
-      "answer": 0,
+      "image": "https://images.impresa.pt/sicnot/2020-03-17-ezgif.com-video-to-gif.gif",
+      "title": "A afirmação: se eu não apresentei os sintomas, não tive o COVID-19. É:",
+      "description": "Existem sim pessoas que tiveram o Covid-19 porém não apresentaram nenhum dos sintomas",
+      "answer": 1,
       "alternatives": [
-        "Toda a população",
-        "Somente os infectados"
+        "Verdadeiro",
+        "Falso"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/XR2huD4XC8h20/giphy.gif",
+      "title": "Posso obter o Covid-19 através de comidas?",
+      "description": "Até o momento, não existe essa comprovação. Mas por segurança continue lavando bem as mãos antes de prepará-los",
+      "answer": 1,
+      "alternatives": [
+        "Claro que posso",
+        "Acredito que não"
       ]
     }
   ],
   "external": [
-    "https://aluraquiz-css.omariosouto.vercel.app/"
+    "https://aluraquiz-css.omariosouto.vercel.app/",
+    "https://chess-quiz.styllth.vercel.app/",
+    "https://scrumquiz.robsonamendonca.vercel.app/",
+    "https://quiz-valorant.johnatanivini.vercel.app/"
   ],
   "theme": {
     "colors": {
