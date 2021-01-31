@@ -48,7 +48,7 @@ Widget.Content = styled.div`
 
 Widget.Loading = styled.div`
   display: flex;
-  padding: 18px 180px;
+  align-items: center;
   justify-content: flex-start;
   align-items: center;
 `;
