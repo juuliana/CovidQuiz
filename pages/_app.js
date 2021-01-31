@@ -27,7 +27,6 @@ const GlobalStyle = createGlobalStyle`
 
 const { theme } = db;
 
-// eslint-disable-next-line react/prop-types
 export default function App({ Component, pageProps }) {
   return (
     <>
