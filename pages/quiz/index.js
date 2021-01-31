@@ -31,12 +31,12 @@ function ResultWidget({ results }) {
               return somatoriaAtual;
           }, 0)}
           {' '}
-          perguntas!
+          perguntas de 7!
         </h1>
       </Widget.Header>
 
       <Widget.Content>
-        <ul align="center">
+        {/*<ul align="center">
           {results.map((result, index) => (
             <li key={`result__${result}`}>
               #
@@ -48,18 +48,18 @@ function ResultWidget({ results }) {
                 : 'Errou'}
             </li>
           ))}
-        </ul>
-        <Widget.Header>
+        </ul>*/}
+        <Widget.Topic>
           <h2>Nesse período, é de extrema importância estarmos cientes sobre os métodos necessários para a prevenção da Covid-19.</h2>
-        </Widget.Header>
+        </Widget.Topic>
         
         <Widget.Header>
           <h1>E além de todos esses procedimentos, conhecer quais os principais sintomas e saber quando precisamos procurar o serviço de saúde.</h1>
         </Widget.Header>
 
-        <Widget.Header>
+        <Widget.Topic>
           <h3>Ajude a salvar vidas!</h3>
-        </Widget.Header>
+        </Widget.Topic>
       </Widget.Content>
     </Widget>
   );
@@ -159,8 +159,15 @@ function QuestionWidget({
                     <Button type="submit" disabled={!hasAlternativeSelected}>
                         Confirmar
                     </Button>
-                    {isQuestionSubmit && isCorrect && <p>Você acertou! {question.description}</p>}
-                    {isQuestionSubmit && !isCorrect && <p>Você errou! {question.description}</p>}
+
+                    {isQuestionSubmit && isCorrect &&
+                      <Widget.Topic><h1>Você acertou!</h1> {question.description}</Widget.Topic>
+                    }
+
+                    {isQuestionSubmit && !isCorrect &&
+                      <Widget.Topic><h1>Você errou!</h1> {question.description}</Widget.Topic>
+                    }
+                    
                 </AlternativesForm>
             </Widget.Content>
         </Widget>
