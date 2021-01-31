@@ -6,11 +6,13 @@ import QuizContainer from '../../src/components/QuizContainer';
 import AlternativesForm from '../../src/components/AlternativesForm';
 import Button from '../../src/components/Button';
 import Loading from '../../src/components/Loading';
+import BackLinkArrow from '../../src/components/BackLinkArrow';
 
 function ResultWidget({ results }) {
   return (
     <Widget>
       <Widget.Header>
+        <BackLinkArrow href="/"/>
         Tela de Resultado:
       </Widget.Header>
 
@@ -26,7 +28,8 @@ function ResultWidget({ results }) {
 
               return somatoriaAtual;
           }, 0)}
-          perguntas
+          {' '}
+          perguntas!
         </p>
         <ul>
           {results.map((result, index) => (
@@ -41,13 +44,14 @@ function ResultWidget({ results }) {
             </li>
           ))}
         </ul>
-        <p>
-            Nesse período, é de extrema importância estarmos cientes sobre os métodos necessários para a prevenção da Covid-19.
-            E além de todos esses procedimentos, conhecer quais os principais sintomas e saber quando precisamos procurar o serviço de saúde.
-        </p>
-        <p>
-            E
-        </p>
+        <Widget.Header>
+          Nesse período, é de extrema importância estarmos cientes sobre os métodos necessários para a prevenção da Covid-19.
+          <br/>
+          E além de todos esses procedimentos, conhecer quais os principais sintomas e saber quando precisamos procurar o serviço de saúde.
+        </Widget.Header>
+        <Widget.Header>
+          Ajude a salvar vidas!
+        </Widget.Header>
       </Widget.Content>
     </Widget>
   );
@@ -57,12 +61,12 @@ function LoadingWidget() {
   return (
     <Widget>
       <Widget.Header>
-        Carregando...
+        Você sabia que...
       </Widget.Header>
 
-      <Widget.Content>
+      <Widget.Loading>
         <Loading/>
-      </Widget.Content>
+      </Widget.Loading>
     </Widget>
   );
 }
@@ -112,7 +116,7 @@ function QuestionWidget({
                         onSubmit();
                         setIsQuestionSubmit(false);
                         setSelectedAlternative(undefined);
-                    }, 8 * 1000);
+                    }, 9 * 1000);
                 }}
                 >
                     {question.alternatives.map((alternative, alternativeIndex) => {
