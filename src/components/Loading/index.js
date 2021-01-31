@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 const Loading = styled.div`
 
-    border: 8px solid rgba(255, 255, 255, 0.671);
-    border-left-color: rgba(255, 255, 255, 0);
+    border: 8px solid #000000;
+    border-left-color: #00000010;
     height: 60px;
     width: 60px;
     border-radius: 50%;
