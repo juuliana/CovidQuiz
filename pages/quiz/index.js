@@ -100,6 +100,7 @@ function QuestionWidget({
           animate="show"
         >
             <Widget.Header>
+                <BackLinkArrow href="/"/>
                 <h3>
                 {`Pergunta ${questionIndex + 1} de ${totalQuestions}`}
                 </h3>
