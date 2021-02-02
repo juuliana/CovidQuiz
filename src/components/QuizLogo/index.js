@@ -4,8 +4,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Logo({ className }) {
-  return (  
-    <img className={className} src="https://fontmeme.com/temporary/c4522b9cfda2471eebfd0e6c55d83f95.png" alt="Covid Logo" />
+  return (
+    <a href="/">
+      <img
+        src="/CovidQuizLogo.png"
+        alt="Logo"
+        className={className}
+      />
+    </a>
   );
 }
 
